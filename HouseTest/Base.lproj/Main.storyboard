@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Introduction View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="HouseTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House_Targaryen" translatesAutoresizingMaskIntoConstraints="NO" id="zLp-po-z6R">
+                                <rect key="frame" x="20" y="60" width="126" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="dnb-fc-ykP"/>
+                                    <constraint firstAttribute="width" constant="126" id="qpn-5Y-8YW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House_Stark" translatesAutoresizingMaskIntoConstraints="NO" id="o2i-Cn-YzQ">
+                                <rect key="frame" x="268" y="60" width="126" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="F2p-ah-LJD"/>
+                                    <constraint firstAttribute="height" constant="136" id="LGS-M1-bAg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House_Martell" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-o1-Zqv">
+                                <rect key="frame" x="20" y="726" width="126" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="GhK-Sx-8M2"/>
+                                    <constraint firstAttribute="height" constant="136" id="fsF-kc-c7Z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House_Lannister" translatesAutoresizingMaskIntoConstraints="NO" id="Wbw-lv-5bg">
+                                <rect key="frame" x="268" y="726" width="126" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="4Ze-KN-VbV"/>
+                                    <constraint firstAttribute="width" constant="126" id="heh-Rf-vdM"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P34-7x-mUE">
+                                <rect key="frame" x="14.5" y="398" width="385" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which House are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbE-9W-G1d">
+                                        <rect key="frame" x="0.0" y="0.0" width="385" height="40"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQD-Vo-eoC">
+                                        <rect key="frame" x="137" y="60" width="111" height="40"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                        <state key="normal" title="Start the test">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="400-Qn-GNV" kind="show" id="8bC-me-1aq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o2i-Cn-YzQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="7BX-WO-08O"/>
+                            <constraint firstItem="l6f-o1-Zqv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FUU-yI-OLd"/>
+                            <constraint firstItem="zLp-po-z6R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Fm8-Kl-w6y"/>
+                            <constraint firstItem="P34-7x-mUE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jew-6c-QG4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wbw-lv-5bg" secondAttribute="trailing" constant="20" id="Joo-ib-fGY"/>
+                            <constraint firstItem="P34-7x-mUE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U9T-eF-dsE"/>
+                            <constraint firstItem="zLp-po-z6R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gK1-4e-U8U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o2i-Cn-YzQ" secondAttribute="trailing" constant="20" id="kCc-Q4-X5O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l6f-o1-Zqv" secondAttribute="bottom" id="qli-Xj-ZMa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wbw-lv-5bg" secondAttribute="bottom" id="rGZ-KW-xJa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="134.59821428571428"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="uhx-8v-ctF">
+            <objects>
+                <viewController id="757-ZF-hoy" customClass="QuestionViewController" customModule="HouseTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bvd-ly-Iig">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKq-b6-HNN">
+                                <rect key="frame" x="148" y="117" width="118" height="30"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pU7-A2-yuJ">
+                                <rect key="frame" x="20" y="335" width="374" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kw-eb-izh">
+                                        <rect key="frame" x="147.5" y="0.0" width="79" height="34"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                        <state key="normal" title="Answer1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="757-ZF-hoy" eventType="touchUpInside" id="EEu-mH-Mj4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZI-EQ-REU">
+                                        <rect key="frame" x="146.5" y="64" width="81" height="34"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                        <state key="normal" title="Answer2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="757-ZF-hoy" eventType="touchUpInside" id="9x5-Ly-lu5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gc-dU-tE4">
+                                        <rect key="frame" x="147" y="128" width="80" height="34"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                        <state key="normal" title="Answer3">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="757-ZF-hoy" eventType="touchUpInside" id="eTO-Ne-9bL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lN-ho-JSX">
+                                        <rect key="frame" x="145.5" y="192" width="83" height="34"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                        <state key="normal" title="Answer4">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="757-ZF-hoy" eventType="touchUpInside" id="F13-zk-Lb6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LnR-Ca-cDl">
+                                <rect key="frame" x="40" y="870" width="334" height="2"/>
+                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LnR-Ca-cDl" firstAttribute="leading" secondItem="bvd-ly-Iig" secondAttribute="leadingMargin" constant="20" id="0jq-wa-2sB"/>
+                            <constraint firstItem="pU7-A2-yuJ" firstAttribute="centerY" secondItem="bvd-ly-Iig" secondAttribute="centerY" id="Fav-hp-M3y"/>
+                            <constraint firstItem="wKq-b6-HNN" firstAttribute="top" secondItem="dE8-UA-h8h" secondAttribute="top" constant="29" id="FnC-HY-cBR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LnR-Ca-cDl" secondAttribute="trailing" constant="20" id="Fvc-0h-J1j"/>
+                            <constraint firstItem="wKq-b6-HNN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dE8-UA-h8h" secondAttribute="leading" constant="20" id="Gac-xG-uj9"/>
+                            <constraint firstItem="dE8-UA-h8h" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wKq-b6-HNN" secondAttribute="trailing" constant="20" id="IV3-gt-eMu"/>
+                            <constraint firstItem="wKq-b6-HNN" firstAttribute="centerX" secondItem="dE8-UA-h8h" secondAttribute="centerX" id="SIb-dJ-eQA"/>
+                            <constraint firstItem="pU7-A2-yuJ" firstAttribute="leading" secondItem="dE8-UA-h8h" secondAttribute="leading" constant="20" id="W5a-88-X5m"/>
+                            <constraint firstItem="dE8-UA-h8h" firstAttribute="trailing" secondItem="pU7-A2-yuJ" secondAttribute="trailing" constant="20" id="pAS-FJ-cTu"/>
+                            <constraint firstItem="LnR-Ca-cDl" firstAttribute="bottom" secondItem="dE8-UA-h8h" secondAttribute="bottom" constant="10" id="wr5-cB-fBQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dE8-UA-h8h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Yq-pL-QJd"/>
+                    <connections>
+                        <outlet property="progressBar" destination="LnR-Ca-cDl" id="4nc-ll-Otq"/>
+                        <outlet property="questionLabel" destination="wKq-b6-HNN" id="Z7t-tW-LCR"/>
+                        <outlet property="stackView" destination="pU7-A2-yuJ" id="OxY-Es-7BQ"/>
+                        <outletCollection property="answerButtons" destination="3kw-eb-izh" collectionClass="NSMutableArray" id="a9A-nj-UDB"/>
+                        <outletCollection property="answerButtons" destination="oZI-EQ-REU" collectionClass="NSMutableArray" id="lhr-fc-Nlr"/>
+                        <outletCollection property="answerButtons" destination="6gc-dU-tE4" collectionClass="NSMutableArray" id="ViU-OK-YAt"/>
+                        <outletCollection property="answerButtons" destination="9lN-ho-JSX" collectionClass="NSMutableArray" id="qDt-pI-8Vd"/>
+                        <segue destination="IAk-JO-FcG" kind="show" identifier="ResultsSegue" id="bsk-yi-nqw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6A-Iu-e1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.753623188406" y="134.59821428571428"/>
+        </scene>
+        <!--Results View Controller-->
+        <scene sceneID="4gQ-ck-grL">
+            <objects>
+                <viewController id="IAk-JO-FcG" customClass="ResultsViewController" customModule="HouseTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SZa-uj-uq1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="c28-gl-pIX">
+                                <rect key="frame" x="20" y="286" width="374" height="378.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="749" image="targaryen" translatesAutoresizingMaskIntoConstraints="NO" id="Ghv-uv-zO0">
+                                        <rect key="frame" x="62" y="0.0" width="250.50000000000006" height="294.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are a Targaryen!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSo-nI-9bP">
+                                        <rect key="frame" x="16.5" y="306.5" width="341.5" height="40"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPL-oT-4EO">
+                                        <rect key="frame" x="139" y="358.5" width="96" height="20"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ghv-uv-zO0" firstAttribute="top" secondItem="c28-gl-pIX" secondAttribute="top" id="U2h-0b-v4K"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House_Targaryen" translatesAutoresizingMaskIntoConstraints="NO" id="ndE-Rs-Au7">
+                                <rect key="frame" x="20" y="103" width="126" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="RF4-RF-kCp"/>
+                                    <constraint firstAttribute="height" constant="136" id="XgM-SX-ceD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House_Targaryen" translatesAutoresizingMaskIntoConstraints="NO" id="8Oy-z2-g6q">
+                                <rect key="frame" x="268" y="103" width="126" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="MqP-9O-PHs"/>
+                                    <constraint firstAttribute="height" constant="136" id="nxl-rc-13b"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House_Targaryen" translatesAutoresizingMaskIntoConstraints="NO" id="4Lx-mm-6uX">
+                                <rect key="frame" x="20" y="726" width="126" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="SUW-sI-zjA"/>
+                                    <constraint firstAttribute="height" constant="136" id="uJP-ra-NJw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="House_Targaryen" translatesAutoresizingMaskIntoConstraints="NO" id="qwk-o3-JYl">
+                                <rect key="frame" x="268" y="726" width="126" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="bjx-7L-l9P"/>
+                                    <constraint firstAttribute="width" constant="126" id="rrR-kU-EhB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NFS-ip-Lhn" firstAttribute="trailing" secondItem="qwk-o3-JYl" secondAttribute="trailing" constant="20" id="8p3-Fh-YTF"/>
+                            <constraint firstItem="ndE-Rs-Au7" firstAttribute="top" secondItem="NFS-ip-Lhn" secondAttribute="top" constant="15" id="9ew-f6-gnX"/>
+                            <constraint firstItem="8Oy-z2-g6q" firstAttribute="top" secondItem="NFS-ip-Lhn" secondAttribute="top" constant="15" id="C5s-oi-QYU"/>
+                            <constraint firstItem="8Oy-z2-g6q" firstAttribute="leading" secondItem="NFS-ip-Lhn" secondAttribute="leading" constant="268" id="G4G-9k-VSs"/>
+                            <constraint firstItem="c28-gl-pIX" firstAttribute="centerY" secondItem="NFS-ip-Lhn" secondAttribute="centerY" id="GZz-Ju-fdE"/>
+                            <constraint firstItem="ndE-Rs-Au7" firstAttribute="leading" secondItem="NFS-ip-Lhn" secondAttribute="leading" constant="20" id="K2R-6a-QkF"/>
+                            <constraint firstItem="NFS-ip-Lhn" firstAttribute="bottom" secondItem="qwk-o3-JYl" secondAttribute="bottom" id="Kgt-rv-cfB"/>
+                            <constraint firstItem="c28-gl-pIX" firstAttribute="centerX" secondItem="SZa-uj-uq1" secondAttribute="centerX" id="QXZ-B7-vSm"/>
+                            <constraint firstItem="NFS-ip-Lhn" firstAttribute="bottom" secondItem="4Lx-mm-6uX" secondAttribute="bottom" id="Sw5-vw-bRy"/>
+                            <constraint firstItem="NFS-ip-Lhn" firstAttribute="trailing" secondItem="c28-gl-pIX" secondAttribute="trailing" constant="20" id="TQg-xn-cj5"/>
+                            <constraint firstItem="c28-gl-pIX" firstAttribute="leading" secondItem="NFS-ip-Lhn" secondAttribute="leading" constant="20" id="XEb-1e-ae0"/>
+                            <constraint firstItem="4Lx-mm-6uX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="c28-gl-pIX" secondAttribute="bottom" constant="8" id="saS-Gc-2oU"/>
+                            <constraint firstItem="4Lx-mm-6uX" firstAttribute="leading" secondItem="NFS-ip-Lhn" secondAttribute="leading" constant="20" id="snw-W1-4Qu"/>
+                            <constraint firstItem="c28-gl-pIX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ndE-Rs-Au7" secondAttribute="bottom" constant="8" id="zjP-cA-hvd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NFS-ip-Lhn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XNh-Mn-uhT">
+                        <barButtonItem key="rightBarButtonItem" title="Try Again?" style="done" id="Pe5-Kc-nMz">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="0c3-J6-3TM" kind="unwind" unwindAction="unwindToIntroWithSegue:" id="CIW-Da-lcO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="characterImageView" destination="Ghv-uv-zO0" id="Ube-6c-ukd"/>
+                        <outlet property="descriptionLabel" destination="iPL-oT-4EO" id="AEB-8E-JZl"/>
+                        <outlet property="resultLabel" destination="OSo-nI-9bP" id="JZL-ui-Mz1"/>
+                        <outletCollection property="shieldImageViews" destination="ndE-Rs-Au7" collectionClass="NSMutableArray" id="zZe-wV-E3S"/>
+                        <outletCollection property="shieldImageViews" destination="8Oy-z2-g6q" collectionClass="NSMutableArray" id="sSE-Df-TSV"/>
+                        <outletCollection property="shieldImageViews" destination="4Lx-mm-6uX" collectionClass="NSMutableArray" id="PtJ-NO-cby"/>
+                        <outletCollection property="shieldImageViews" destination="qwk-o3-JYl" collectionClass="NSMutableArray" id="de2-XO-L9A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZO-cd-vrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0c3-J6-3TM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2560.8695652173915" y="134.59821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cHi-WN-vjS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="400-Qn-GNV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IHT-RS-wbW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="757-ZF-hoy" kind="relationship" relationship="rootViewController" id="XId-e0-PgF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEE-Tw-0v5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.60869565217399" y="134.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="House_Lannister" width="200" height="235.5"/>
+        <image name="House_Martell" width="300" height="300"/>
+        <image name="House_Stark" width="300" height="330"/>
+        <image name="House_Targaryen" width="300" height="330"/>
+        <image name="targaryen" width="250.5" height="294.5"/>
+    </resources>
+</document>
